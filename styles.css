@@ -1,0 +1,156 @@
+/* PAGE */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #111;
+    margin: 0;
+    color: #cbbbb2;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+header{
+    z-index: 9999;
+    position: fixed;
+    background-color: #1d1d1d;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.logo_header{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    height: 100%;
+}
+
+.item_header+.item_header{
+    margin-left: 4%;
+}
+
+.item_header{
+    color: #cbbbb2;
+}
+
+a.item_header:hover{
+    color: #75d8f0;
+}
+
+
+
+
+
+/* TITLE */
+
+#title{
+    padding-top: 15%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.img_title{
+    width: 75%;
+}
+
+
+
+
+
+/* SLIDER */
+
+#slider{
+    padding-top: 5%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.slider_wrap{
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 65%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides_container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    transition-duration: 1000ms;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translate3d(0%, 0, 0);
+}
+
+.slide{
+    width: 33.3333%;
+}
+
+.img_slider{
+    width: 100%;
+}
+
+.button_slider{
+    position: absolute;
+    top: 50%;
+    width: 8%;
+    cursor: pointer;
+}
+
+.button_slider_left{
+    left: 0;
+}
+
+.button_slider_right{
+    right: 0;
+    transform: scale(-1, 1);
+}
+
+.img_arrwow{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.img_arrwow_hover{
+    display: none;
+}
+
+.button_slider:hover .img_arrwow_normal{
+    display: none;
+}
+
+.button_slider:hover .img_arrwow_hover{
+    display: block;
+}
+
+
+
+
+/* COPYRIGTH */
+
+#copyright{
+    background-color: #1d1d1d;
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
