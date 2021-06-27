@@ -8,6 +8,9 @@ body{
     background-color : black;
     margin: 0;
     color: #cbbbb2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -168,7 +171,6 @@ a.item_header:hover{
 .paragraphe{
     font-size: x-large;
     word-wrap: break-word;
-    text-align: justify;
     padding-left : 5%;
     padding-right : 5%;
 }
@@ -188,6 +190,10 @@ a.item_header:hover{
 
 
 /* COPYRIGTH */
+
+footer{
+    margin-top: auto;
+}
 
 #copyright{
     background-color: #1d1d1d;
