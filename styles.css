@@ -8,6 +8,9 @@ body{
     background-color: #111;
     margin: 0;
     color: #cbbbb2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -147,6 +150,10 @@ a.item_header:hover{
 
 
 /* COPYRIGTH */
+
+footer{
+    margin-top: auto;
+}
 
 #copyright{
     background-color: #1d1d1d;
