@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+        
+        <link rel="icon" href="asset/picture/icon/icon.ico">
+        <title>Snake</title>
+    </head>
+
+
+
+
+
+    <body>
+        <header>
+            <a href="../../index.html">  <img class="logo_header"  src="../../asset/picture/logo/gif__liro_u.gif"> </a>
+            
+            <a class="item_header" href="#title">Titre</a>
+
+            <a class="item_header" href="#slider">Galerie</a>
+
+            <a class="item_header" href="#description">description</a>
+
+            <a class="item_header download_header" href="asset/file/download/">Téléchargement</a>
+        </header>
+
+
+        <main>
+            <div id = "title">
+                <img class="img_title" src="asset/picture/title/img_title.png">
+            </div>
+
+            <div id="slider">
+                <div class="slider_wrap">
+                    <div class="slides_container">
+                        <div class="slides">
+                            <div class="slide">
+                                <img class="img_slider img_video_slider" src="asset/picture/slider/img_video_1.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_1.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_2.png">
+                            </div>
+                        
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_3.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_4.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_5.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_6.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_7.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button_slider button_slider_left">
+                        <img class="arrow_left img_arrwow img_arrwow_normal" src="../../asset/picture/arrow/arrow.png">
+                        <img class="arrow_left img_arrwow img_arrwow_hover" src="../../asset/picture/arrow/arrow_hover.png">
+                    </div>
+                        
+                    <div class="button_slider button_slider_right">
+                        <img class="arrow_right img_arrwow img_arrwow_normal" src="../../asset/picture/arrow/arrow.png">
+                        <img class="arrow_right img_arrwow img_arrwow_hover" src="../../asset/picture/arrow/arrow_hover.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="description">
+                
+                <!-- RESUME -->
+
+                <p class="paragraphe titre_para">
+                    Le jeu de la vie :
+                </p>
+
+                <p class = "paragraphe">
+                    le jeu de la vie est un jeu très connu chez les développeurs qui consiste, à partir de règles très 
+                    simples, à créer une évolution complexe de cellules.
+                </p>
+
+                <!-- FONCTIONNALITEE -->
+
+                <p class = "paragraphe titre_para">
+                    Le contenu :
+                </p>
+
+                <p class="paragraphe">
+                    Vous pouvez cliquer sur une case pour changer son état (pensez à mettre sur pause sinon la celulle va 
+                    mourir sans être afficher au prochain tour).
+                </p>
+                
+                <p class="paragraphe">
+                    Vous pouvez changer la taille de la grille mais ne soyez pas trop gourmand, j'ai optimisé la plupart du 
+                    code mais je n'ai pas étudié cette partie. Au lancement, par le code, on peut entrer des valeurs comme 
+                    100x100 mais une fois lancé le redimensionnement prend énormément de ressources et donc est très limittant 
+                    il ne permet pas de créer des grilles d'une telle taille.
+                </p>
+
+                <p class="paragraphe">
+                    il est possible de changer la couleur des cellules mortes et vivantes.
+                </p>
+
+                <p class="paragraphe">
+                    il est possible de charger un pattern enregistré, cependant si vous redimensionnez la grille après le 
+                    chargement, le pattern sera cassé à cause d'un choix de développement du debut du projet que nous 
+                    n'avions pas anticipé. pour que le pattern fonctionne il vous suffit de réimporter le pattern. Les 
+                    documents de pattern sont séparés en catégories pour ne pas tout se mélanger.
+                </p>
+
+                <p class="paragraphe">
+                    vous pouvez remplir la grille de cellules mortes (raccourci du bouton: touche_k)/vivantes(raccourci du 
+                    bouton: touche_f) ou même générer une grille aléatoire (raccourci du bouton: touche_r).
+                </p>
+
+                <p class="paragraphe">
+                    Un compteur de tour est intégré, pour le réinitialiser cliquer sur le bouton prévu pour cette 
+                    tâche (raccourci du bouton: touche_c).
+                </p>
+
+                <p class="paragraphe">
+                    Vous pouvez choisir d'avoir une grille torique ou non torique (raccourci du bouton: touche_t).
+                </p>
+
+                <p class="paragraphe">
+                    Les conditions de naissances et de survies sont également modifiables.
+                </p>
+
+                <p class="paragraphe">
+                    Vous pouvez choisir le mode de progression de la grille (le plus vite possible, par un timer modifiable, 
+                    à chaque clic de la touche "+") (raccourci du bouton: touche_m).
+                </p>
+                
+                <p class="paragraphe">
+                    Vous pouvez lancer la simulation (raccourci du bouton: touche_s).
+                </p>
+
+                <!-- CREDIT -->
+
+                <p class="paragraphe titre_para">
+                    Les crédits :
+                </p>
+
+                <p class="paragraphe">
+                    Design par moi-même.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div id="copyright">
+                <div class="text_copyright">
+                    Copyright © 2021 liro_u Tous droits réservés
+                </div>
+            </div>
+        </footer>
+
+        <!-- POPUP -->
+
+        <div class="popup_box">
+            <div class="popup_container">
+                <img class="close_popup_button" src="../asset/picture/player_video/close_button.png">
+                <iframe class="popup_video" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <!-- SCRIPT -->
+
+        <script src="../slider.js" defer></script>
+
+        <script src="../close_video_player.js" defer></script>
+
+    </body>
+</html>
+
