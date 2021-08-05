@@ -25,7 +25,7 @@
 
             <a class="item_header" href="#description">description</a>
 
-            <a class="item_header download_header" href="asset/file/download/">Téléchargement</a>
+            <a class="item_header download_header" href="asset/file/download/snake.zip">Téléchargement</a>
         </header>
 
 
@@ -89,68 +89,256 @@
                 <!-- RESUME -->
 
                 <p class="paragraphe titre_para">
-                    Le jeu de la vie :
+                    Snake :
                 </p>
 
                 <p class = "paragraphe">
-                    le jeu de la vie est un jeu très connu chez les développeurs qui consiste, à partir de règles très 
-                    simples, à créer une évolution complexe de cellules.
+                    On ne présente plus le snake, un jeu emblématique et connu de tous qui dans cette version se voix apporté quelque modification.
+                    (codé en 2020 pour un projet de lycée)
                 </p>
 
                 <!-- FONCTIONNALITEE -->
 
                 <p class = "paragraphe titre_para">
-                    Le contenu :
+                    Six modes de jeu: :
                 </p>
 
                 <p class="paragraphe">
-                    Vous pouvez cliquer sur une case pour changer son état (pensez à mettre sur pause sinon la celulle va 
-                    mourir sans être afficher au prochain tour).
+                    Mode normal, ouvert, piege, multiproie, multijoueur, special.
                 </p>
                 
-                <p class="paragraphe">
-                    Vous pouvez changer la taille de la grille mais ne soyez pas trop gourmand, j'ai optimisé la plupart du 
-                    code mais je n'ai pas étudié cette partie. Au lancement, par le code, on peut entrer des valeurs comme 
-                    100x100 mais une fois lancé le redimensionnement prend énormément de ressources et donc est très limittant 
-                    il ne permet pas de créer des grilles d'une telle taille.
+                <p class = "paragraphe titre_para">
+                    Cinq vitesse :
                 </p>
 
                 <p class="paragraphe">
-                    il est possible de changer la couleur des cellules mortes et vivantes.
-                </p>
-
-                <p class="paragraphe">
-                    il est possible de charger un pattern enregistré, cependant si vous redimensionnez la grille après le 
-                    chargement, le pattern sera cassé à cause d'un choix de développement du debut du projet que nous 
-                    n'avions pas anticipé. pour que le pattern fonctionne il vous suffit de réimporter le pattern. Les 
-                    documents de pattern sont séparés en catégories pour ne pas tout se mélanger.
-                </p>
-
-                <p class="paragraphe">
-                    vous pouvez remplir la grille de cellules mortes (raccourci du bouton: touche_k)/vivantes(raccourci du 
-                    bouton: touche_f) ou même générer une grille aléatoire (raccourci du bouton: touche_r).
-                </p>
-
-                <p class="paragraphe">
-                    Un compteur de tour est intégré, pour le réinitialiser cliquer sur le bouton prévu pour cette 
-                    tâche (raccourci du bouton: touche_c).
-                </p>
-
-                <p class="paragraphe">
-                    Vous pouvez choisir d'avoir une grille torique ou non torique (raccourci du bouton: touche_t).
-                </p>
-
-                <p class="paragraphe">
-                    Les conditions de naissances et de survies sont également modifiables.
-                </p>
-
-                <p class="paragraphe">
-                    Vous pouvez choisir le mode de progression de la grille (le plus vite possible, par un timer modifiable, 
-                    à chaque clic de la touche "+") (raccourci du bouton: touche_m).
+                    Vitesse lente, normal, rapide, experte, acceleré.
                 </p>
                 
+                <p class = "paragraphe titre_para">
+                    Neuf theme :
+                </p>
+
                 <p class="paragraphe">
-                    Vous pouvez lancer la simulation (raccourci du bouton: touche_s).
+                    Theme ninja, negatif, ikeo, doume, deadpoule, girly, dark-girly, epm, zeldo.
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    les Bonus :
+                </p>
+
+                <p class="paragraphe">
+                    une vie apparait de temps en temps(tous les 500 a 1200 ticks),
+		quand on la mange on gagne une vie supplementaire (elle n'est 
+		disponible qu'en solo). il ne peut pas y avoir  que 2 vie en meme 
+		temps sur le terrainau maximum. le maximum de vie collectable est 
+		de 10.la vie donne egalement 25 points.
+                </p>
+
+                <p class="paragraphe">
+                    un coffre vert apparait de temps en temps(tous les 150 a 750 
+		ticks).quand on le mange on gagne 35 points suplémentaires.
+		il ne peut pas y en avoir plus de un a la fois sur le terrain.
+                </p>
+
+                <p class="paragraphe">
+                    le multiplicateur de point a 1 chance sur 300 d'apparaitre a chaque deplacement du 
+                    serpent. quand on le mange on gagne un bonus de 4 qui s'ajoute a 
+                    l'ancien multiplicateur de point. le bonus multiplicateur de point
+                    maximal est 41. en multijoueur le bonus n'est ajouté qu'a celui
+                    qui a ramassé l'objet.il ne peut pas y avoir plus de 1 bonus a la
+                    fois sur le terrain.son effet dure entre 1 et 300 tick.
+                </p>
+
+                <p class="paragraphe">
+                    le bouclier apparait entre 450 et 550 ticks quand le mode piege est activé,
+                    une fois mangé quand on passe sur un piege il est detruit, il ne 
+                    peut y en avoir plus de 1 a la fois sur le terrain, si une 
+                    personne a le pouvoir du bouclier actif alors il ne peut pas spawn
+                    en une partie il ne peut pas y en avoir plus de 3.le bonus est
+                    specifique au serpent qui l'a mangé.il apparait a coté du score
+                    quand il est actif
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    Les malus :
+                </p>
+
+                <p class="paragraphe">
+                    les points en moins apparait entre 1 et 1700 tiks,une fois mangé le joueur qui le 
+                    prend perd 50 points.le maximum de cet objet sur le terrain est de
+                    3.si un bonus multiplicateur est actif alors le joueur perdra les
+                    points abituelle multipliee par le bonus.
+                </p>
+
+                <p class="paragraphe">
+                    le diviseur de score apparait entre 1 et 4000 ticks.il ne peut y en avoir que 1 a 
+                    la fois sur le terrain.si un joueur le mange son score sera divisé
+                    par 2.si un bonus multiplicateur est actif alors il sera divisé 
+                    par le chiffre habituelle multiplié par le bonus actif.
+                </p>
+
+                <p class="paragraphe">
+                    Quand on mange l'inverseur de touches, nos touches sont changé, si on meurt et quil 
+                    nous reste 1 vie alors le malus se desactive.il peut y en avoir 3
+                    a la fois sur le terrain.il apparait entre 1 et 1900 ticks, et dur 
+                    entre 5 et 30 ticks.il change le coté de la tete quand il est 
+                    actif.
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    Les objets :
+                </p>
+
+                <p class="paragraphe">
+                    La piece apparait de temps en temps(entre 20 et 70 ticks),il ne peut
+                    y en avoir que 5 en meme temps sur le terrain.elle raporte 3 piece 
+                    suplementaire.
+                </p>
+
+                <p class="paragraphe">
+                    les coffres apparaissent rarement(entre 200 et 5000 ticks), il peut y en 
+                    avoir maximum 3 a la fois sur le terrain.si un joueur le mange il
+                    fait gagner 500 piece.
+                </p>
+
+                <p class="paragraphe">
+                    le multiplicateur de pieces ce sont deux pieces qui une fois collecter vont ajouter +2 au
+                    multiplicateur de point precedent, ce bonus est 
+                    cumulable jusqua obtenir un multiplicateur vallant "fois 11".
+                    il a une chance sur 300 d'apparaitre a chaque tick.
+                    une fois ramassé sont temps d'activation varie de 1 tick a 300
+                    ticks.il ne peut y en avoir que un a la fois sur le terrain.
+                    en multijoueur le bonus s'applique au deux joueurs.
+                </p>
+
+                <p class="paragraphe">
+                    les pommes font grandir le serpent de 1 case quand le serpent 
+                    la mange.
+                    la pomme rouge a 95% de chance d'apparaitre,
+				    une fois mangé elle rajoute 1 points au score
+                    la pomme en or a 5% de chance d'etre une pomme en or 
+                    quand elle apparait,la pomme en or donne 10 point,
+                    elle donne également 50 pieces.
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    le systeme d'argent:
+                </p>
+
+                <p class="paragraphe">
+                    le maximum d'argent obtenable est 99999 piece , l'apparition de bonus 
+                    de piece comme les pieces ou les pommes en or prend compte de cette limite
+                    pour leurs apparitions (on verifie que l'argent actuel + l'argent 
+                    disponible sur le terrain ne depasse pas cette limite) 
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    le systeme de points:
+                </p>
+
+                <p class="paragraphe">
+                    le maximum de point est 9999999 points, la partie continuera tous de meme 
+                    apres ce score atteint et les objet,bonus,malus continueront normalement
+                    le score ne peut pas etre negatif
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    les options:
+                </p>
+
+                <p class="paragraphe">
+                    dans le menu option il est possible de definir le mode de jeu, 
+                    l'activation ou la desactivation des bonus, des malus, du son, des 
+                    musiques, et le choix du theme.
+                </p>
+
+                <p class="paragraphe">
+                    si le mode special est selectioné une fleche apparaitra pour configurer
+                    le mode special,si jamais les bonus/malus sont desactivé les fenetres 
+                    permetant la configuration precise de celle ci n'apparaitront pas.
+                </p>
+
+                <p class="paragraphe">
+                    seul les bonus compatible avec les modes selectioné apparaitront
+                </p>
+                
+                <p class = "paragraphe titre_para">
+                    les scores:
+                </p>
+
+                <p class="paragraphe">
+                    les 5 meilleurs scores de chaque mode sont enregistré et reclassé dans
+	                l'ordre du meilleur au moins fort
+                </p>
+
+                <p class="paragraphe titre_para">
+                    le shop:
+                </p>
+
+                <p class="paragraphe">
+                    le shop n'est pas completement fini, vous pouvez débloquer les themes les vitesse et les modes. parfois pour certain achat quand vous acheté un article il ne disparait pas du shop, c'est dû au fait que je voulais ajouté des ameliorations aux différents modes mais je n'ai pas fini.
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    les sauvegardes:
+                </p>
+
+                <p class="paragraphe">
+                    pour eviter de reconfigurer toujours les options et pour le bon 
+                    fonctionnement du jeu, le mode, la vitesse, le theme, l'activation du son,
+                    l'activation de la musique, le dernier panneau d'affichage des scores 
+                    consulté, les parametres des modes du mode special(bordure,piege,
+                    multiproie,multijoueur),l'activation des malus,l'activation des malus,les 
+                    parametre du mode special des bonus(la multiplication des point,les 10 	
+                    points bonus,la vie,le bouclier),l'argent du joueur sont stocké dans un 
+                    fichier .txt
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    les controles:
+                </p>
+
+                <p class="paragraphe">
+                    en mode solo on peut utiliser les fleche directionnel du clavier pour se
+                    deplacer ainsi que la souris (clic droit pour que le serpent 
+                    tourne a droite et inversement)
+                </p>
+
+                <p class="paragraphe">
+                    en mode multijoueur	le joueur 1 utilise respectivement pour avancer, reculer, 
+                    aller a droite, aller a gauche, les touches z,s,d,q, et le 
+                    joueur 2 utilise les fleches directionnel du clavier 
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    Les musiques:
+                </p>
+
+                <p class="paragraphe">
+                    sont toutes libres de droit et certaine ont été réalisé
+                    pour le jeu. les musiques du jeu sont de courte boucle qui se 
+                    repete pour donner l'ilusion que le chanson ne s'arrete jamais.
+                    une grande partie des musique ont été prise sur le site:
+                    https://www.looperman.com/
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    Les bruitages:
+                </p>
+
+                <p class="paragraphe">
+                    sont tous libre de droit, certain ont été réalisé pour le jeu
+                    et dautre ont ete trouvé sur des sites tel que 
+                    https://freesound.org/
+                </p>
+
+                <p class = "paragraphe titre_para">
+                    Raccourci :
+                </p>
+
+                <p class="paragraphe">
+                    En appuyant sur "p" ou "escape" quand on est en jeu, un menu pause s'ouvre et nous permet de reprendre la partie ou de quitter.
                 </p>
 
                 <!-- CREDIT -->
@@ -160,7 +348,10 @@
                 </p>
 
                 <p class="paragraphe">
-                    Design par moi-même.
+                    sprite par ESP - lnl.
+                    trailer par liro_u
+                    police telechargé sur dafont
+                    code par liro_u
                 </p>
             </div>
         </main>
@@ -178,7 +369,7 @@
         <div class="popup_box">
             <div class="popup_container">
                 <img class="close_popup_button" src="../asset/picture/player_video/close_button.png">
-                <iframe class="popup_video" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="popup_video" width="100%" height="100%" src="https://www.youtube.com/watch?v=8MK7j19bQTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         
