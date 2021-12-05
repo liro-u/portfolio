@@ -3,14 +3,17 @@ var close_button=document.getElementsByClassName('close_popup_button')[0];
 var video_list=document.getElementsByClassName('popup_video');
 var num_video_active=0;
 
-var img_video_1=document.getElementsByClassName('img_video_slider')[0];
+var img_video=document.getElementsByClassName('img_video_slider');
 
 function show(num){
     num_video_active=num;
     close_back.style.display="block";
     video_list[num_video_active].style.display="block";
 }
-img_video_1.addEventListener('click',function(){show(0)});
+for (let n = 0; n < img_video.length; n ++){
+    img_video[n].addEventListener('click',function(){show(n)});
+}
+
 
 function close(){
     close_back.style.display="none";
