@@ -1,0 +1,4 @@
+-stop video when close
+-add background image
+-make chibi project page
+-mobile video embed not too big

@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: medium;
 }
 
 a{
@@ -21,7 +22,7 @@ a{
 /* HEADER */
 
 header{
-    z-index: 999;
+    z-index: 9999;
     position: fixed;
     background-color: #1d1d1d;
     top: 0;
