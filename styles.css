@@ -2,20 +2,24 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: url("../asset/picture/cursor/img_1.png"), auto;
 }
 
 body{
+    background: no-repeat;
+    background-size: cover;
+    background-image: url("asset/picture/background/img_1.png");
     background-color: #111;
     margin: 0;
     color: #cbbbb2;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: medium;
 }
 
 a{
     text-decoration: none;
+    cursor: url("../asset/picture/cursor/img_2.png"), pointer;
 }
 
 
@@ -119,6 +123,7 @@ a.item_header:hover{
     top: 50%;
     width: 8%;
     cursor: pointer;
+    cursor: url("../asset/picture/cursor/img_2.png"), pointer;
 }
 
 .button_slider_left{

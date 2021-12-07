@@ -1,4 +1,8 @@
 -stop video when close
--add background image
--make chibi project page
 -mobile video embed not too big
+-copyrigth at good size on mobile project page
+
+-background (game of life / audio visualizer)
+-make chibi project page
+    -version telechargeable de chibi project (android / windows)
+    -poster la video sur ytb

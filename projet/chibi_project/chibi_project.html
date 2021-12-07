@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../style.css">
+
+        <link rel="icon" href="asset/picture/icon/icon.ico">
+        <title>Chibi Project</title>
+    </head>
+
+
+
+
+
+    <body style="background-image: url(asset/picture/background/img_1.png);">
+        <header>
+            <a href="../../index.html">  <img class="logo_header"  src="../../asset/picture/logo/gif__liro_u.gif"> </a>
+            
+            <a class="item_header" href="#title">Titre</a>
+
+            <a class="item_header" href="#slider">Galerie</a>
+
+            <a class="item_header" href="#description">description</a>
+
+            <a class="item_header download_header unable" title="not disponible now" href="">Windows</a>
+
+            <a class="item_header download_header unable" title="not disponible now" href="">Android</a>
+        </header>
+
+
+        <main>
+            <div id = "title">
+                <img class="img_title" src="asset/picture/title/img_title.png">
+            </div>
+
+            <div id="slider">
+                <div class="slider_wrap">
+                    <div class="slides_container">
+                        <div class="slides">
+                            <div class="slide">
+                                <img class="img_slider img_video_slider" src="asset/picture/slider/img_video_1.png">
+                            </div>
+
+                            <div class="slide">
+                                <img class="img_slider" src="asset/picture/slider/img_1.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button_slider button_slider_left">
+                        <img class="arrow_left img_arrwow img_arrwow_normal" src="../../asset/picture/arrow/arrow.png">
+                        <img class="arrow_left img_arrwow img_arrwow_hover" src="../../asset/picture/arrow/arrow_hover.png">
+                    </div>
+                        
+                    <div class="button_slider button_slider_right">
+                        <img class="arrow_right img_arrwow img_arrwow_normal" src="../../asset/picture/arrow/arrow.png">
+                        <img class="arrow_right img_arrwow img_arrwow_hover" src="../../asset/picture/arrow/arrow_hover.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="description">
+                
+                <!-- RESUME -->
+
+                <p class="paragraphe titre_para">
+                    Chibi Project:
+                </p>
+
+                <p class = "paragraphe">
+                    Chibi Project est un projet que je me suis lancé en aout 2021. C'est un jeu de combat en multijoueur.<br>
+                    Ce projet devait me faire découvrir le multijoueur et me permetre de m'ameliorer en 3d, je voulais également porter le jeu sur mobile.<br>
+                    (codé en 2021)
+                </p>
+
+                <!-- AIDE AU LANCEMENT DU JEU -->
+
+                <p class="paragraphe titre_para">
+                    LANCER LE JEU:
+                </p>
+
+                <p class = "paragraphe">
+                    Pour lancer le jeu vous devez lancer une version server sur un pc ou un téléphone.<br>
+                    Apres vous être connecté au meme wifi que le server vous devez récuperer l'adress ip du server avec par exemple la commande ipconfig dans le cmd.<br>
+                    Ensuite choisissez la map et le mode dans lequel vous voulez jouer depuis le server.<br>
+                    Puis une fois le server lancé, toutes les versions clientes entre l'ip du server et démarre le jeu.<br>
+                    Maintenant, amusez vous bien!
+                </p>
+
+                <!-- CONTENU -->
+
+                <p class = "paragraphe titre_para">
+                    Le contenu :
+                </p>
+                
+                <!---->
+
+                <p class="paragraphe titre_para sous_titre_para">
+                    Les cartes :
+                </p>
+
+                <p class="paragraphe">
+                    Pour le moment il n'y a que deux map, une qui m'a permit de faire des test sur le jeu pendant son developpement (la devmap),
+                    et une qui elle est plus pensé pour un vrai gameplay(fantasy world).
+                </p>
+
+                <!---->
+                
+                <p class="paragraphe titre_para sous_titre_para">
+                    Les personnages:
+                </p>
+
+                <p class="paragraphe">
+                    A l'heure actuelle il n'y a que un personnage qui ne dispose que d'une attaque(touche j), et d'esquive(touche space), pour se deplacer vous pouvez faire avec Z,Q,S,D.
+                    Vous pouvez aussi utiliser les touches dédiés a la version mobile.
+                </p>
+
+                <!---->
+                
+                <p class="paragraphe titre_para sous_titre_para">
+                    Les Objets:
+                </p>
+
+                <p class="paragraphe">
+                    Sur les maps vous pourrez rencontrer deux objets differents
+                </p>
+
+                <p class="paragraphe">
+                    Des barils qui explose quand vous tiré dessus idéal pour prendre l'aventage durant un combat.
+                </p>
+
+                <p class="paragraphe">
+                    Un healer qui vous redonne instantannément de la vie également pratique pour changer l'issus d'un combat mal engagé.
+                </p>
+
+                <!-- CREDIT -->
+
+                <p class="paragraphe titre_para">
+                    Les crédits du jeu :
+                </p>
+
+                <p class="paragraphe">
+                    modèle 3d issus de sketchfab.
+                </p>
+
+                <p class="paragraphe">
+                    musique issus de Daydream Anatomy.
+                </p>
+
+                <p class="paragraphe">
+                    sprite de l'explosion par NekotoArts sur youtube.<br>
+                    les autres sprites ont été réalisées par moi.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div id="copyright">
+                <div class="text_copyright">
+                    Copyright © 2021 liro_u Tous droits réservés
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- POPUP -->
+
+        <div class="popup_box">
+            <div class="popup_container">
+                <img class="close_popup_button" src="../asset/picture/player_video/close_button.png">
+                <iframe class="popup_video" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+
+        <script src="../slider.js" defer></script>
+
+        <script src="../close_video_player.js" defer></script>
+
+    </body>
+</html>
