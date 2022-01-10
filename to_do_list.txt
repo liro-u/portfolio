@@ -5,4 +5,3 @@
 -background (game of life / audio visualizer)
 -make chibi project page
     -version telechargeable de chibi project (android / windows)
-    -poster la video sur ytb
