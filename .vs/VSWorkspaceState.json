@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\cv"
+    "\\asset",
+    "\\asset\\picture",
+    "\\asset\\picture\\slider_image",
+    "\\projet",
+    "\\projet\\monster_clicker\\asset",
+    "\\projet\\monster_clicker\\asset\\picture"
   ],
+  "SelectedNode": "\\asset\\picture\\slider_image\\monster_clicker.png",
   "PreviewInSolutionExplorer": false
 }
