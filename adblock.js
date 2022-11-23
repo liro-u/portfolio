@@ -1,1 +1,0 @@
-alert("ATTENTION !\nSi vous utilisé adBlock, le design de la page ne sera pas chargé... ");
