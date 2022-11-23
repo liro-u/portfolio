@@ -188,31 +188,8 @@
       </div>
     </div>
   </div>
-  <script>
-var scriptsarray=new Array(
-"style.css"
-)
-
-var totalloads=0;
-
-for (var i=0;i<scriptsarray.length;i++){
-var script = document.createElement('script');
-                    script.type = 'text/javascript';
-                    script.src = scriptsarray[i] + '?rnd=' + Math.random();
-                   document.body.appendChild(script);
-    script.addEventListener('load', wholoads, false);
-    script.addEventListener('error', errload,false);
-}
-
-function wholoads(scriptname){
- totalloads++;
- if (totalloads==scriptsarray.length){alert('All scripts and css load');}
-}
-
-function errload(event){
-
-    console.log(event);
-}
-  </script>
+ <script>
+   alert(ATTENTION ! \nIl y a de forte chance que vous utilisiez adBlock et la page ne parvient pas a charger son design,\nveuillez le desactiver.);
+ </script>
 </body>
 </html>
