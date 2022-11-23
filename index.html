@@ -99,7 +99,15 @@
         <script src="slider.js" defer></script>
 
         <script>
-        alert("ATTENTION !\nSi vous utilisez adBlock, le design de la page ne sera pas chargé... ");
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = '../style.css' + '?rnd=' + Math.random();
+        document.body.appendChild(script);
+        script.addEventListener('error', errload,false);
+
+        function errload(event){
+            alert(ATTENTION ! \nIl y a de forte chance que vous utilisiez adBlock et la page ne parvient pas a charger son design,\nveuillez le desactiver.);
+        }
         </script>
     
     </body>
