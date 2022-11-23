@@ -163,30 +163,6 @@
         </footer>
 
         <script src="../slider.js" defer></script>
-
-        <script>
-const delay = ms => new Promise(res => setTimeout(res, ms));
-var is_load = false;
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = "styleh.css" + '?rnd=' + Math.random();
-document.body.appendChild(script);
-script.addEventListener('load', wholoads, false);
-}
-
-function wholoads(scriptname){
-    is_load = true;
-}
-
-function errorload(){
-    await delay(5000);
-    if (! is_load){
-        alert("ATTENTION !\nVous utilisez surrement un bloqueur de pub...\nLa page ne peu pas charger correctement... veuillez le desactiver.");
-    }
-}
-errorload()
-        </script>
-
     </body>
 </html>
 
