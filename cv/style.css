@@ -11,10 +11,10 @@
   --colorNegative: rgb(0, 0, 0);
   --colorNegative2: #46464e;
   
-  --lineHeight: 19px;
-  --spaceSection: 27.0px;
-  --spacePara: 21.5px;
-  --spaceLine: 7px;
+  --lineHeight: 17.0px;
+  --spaceSection: 20.0px;
+  --spacePara: 10.0px;
+  --spaceLine: 7.0px;
   --spaceLetter: 0.2px;
 
   --fontFamily: Blinker;
